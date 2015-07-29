@@ -13,7 +13,7 @@
 
 @property (nonatomic, copy) NSString *responseTarget;
 @property (nonatomic, LW_STRONG) NSData *responseData;
-@property (nonatomic) int expectedSize;
+@property (nonatomic) NSUInteger expectedSize;
 @property (nonatomic, LW_STRONG) NSError *error;
 @property (nonatomic) float downloadRate;
 @property (nonatomic, LW_STRONG) NSURLResponse *response;

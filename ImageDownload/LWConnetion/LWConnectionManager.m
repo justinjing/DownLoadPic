@@ -15,16 +15,16 @@
 
 @implementation LWConnectionManager
 
-static LWConnectionManager *instance;
++ (LWConnectionManager *)sharedInstance {
+    
+    static LWConnectionManager *shInstance;
+    static dispatch_once_t onceToken;
+    
+    dispatch_once(&onceToken, ^{
+        shInstance = [[LWConnectionManager alloc] init];
+    });
 
-
-
-+ (LWConnectionManager *)defaultManager {
-    if (!instance) {
-        instance = [[self alloc] init];
-    }
- 
-    return instance;
+    return shInstance;
 }
 
 - (id)init {

@@ -20,6 +20,7 @@
 		1FEB02D81B68B46800F2C55F /* LWResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEB02D31B68B46800F2C55F /* LWResponse.m */; };
 		1FEB02DB1B68B5E800F2C55F /* DownLoadDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEB02DA1B68B5E800F2C55F /* DownLoadDataSource.m */; };
 		1FEB02DE1B68B7B600F2C55F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEB02DD1B68B7B600F2C55F /* ViewController.m */; };
+		1FEB02E01B68BC8C00F2C55F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FEB02DF1B68BC8C00F2C55F /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		1FEB02DA1B68B5E800F2C55F /* DownLoadDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadDataSource.m; sourceTree = "<group>"; };
 		1FEB02DC1B68B7B600F2C55F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1FEB02DD1B68B7B600F2C55F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1FEB02DF1B68BC8C00F2C55F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		1FEB028B1B68B41800F2C55F = {
 			isa = PBXGroup;
 			children = (
+				1FEB02DF1B68BC8C00F2C55F /* Default-568h@2x.png */,
 				1FEB02961B68B41800F2C55F /* ImageDownload */,
 				1FEB02B01B68B41800F2C55F /* ImageDownloadTests */,
 				1FEB02951B68B41800F2C55F /* Products */,
@@ -265,6 +268,7 @@
 			files = (
 				1FEB02A81B68B41800F2C55F /* LaunchScreen.xib in Resources */,
 				1FEB02A51B68B41800F2C55F /* Images.xcassets in Resources */,
+				1FEB02E01B68BC8C00F2C55F /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +482,7 @@
 				1FEB02B91B68B41800F2C55F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FEB02BA1B68B41800F2C55F /* Build configuration list for PBXNativeTarget "ImageDownloadTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +491,7 @@
 				1FEB02BC1B68B41800F2C55F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

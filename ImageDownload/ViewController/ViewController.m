@@ -18,8 +18,7 @@
 
 @interface ViewController () <UITableViewDelegate,LWConnectionDelegate>
 {
-    LWConnectionManager *connetionManager;
-    NSArray * urlArr;
+     NSArray * urlArr;
 }
 
 @property(nonatomic ,strong)UITableView *rightTableView;
@@ -35,7 +34,6 @@
     [super viewDidLoad];
     self.title = @"DownLoad";
     self.view.backgroundColor =[UIColor whiteColor];
-    connetionManager = [LWConnectionManager defaultManager];
     
     urlArr = [[NSArray alloc] initWithObjects:@"http://www.wallcoo.com/nature/Japan_Hokkaido_Furano_Country_field_1920x1200/wallpapers/1920x1080/Japan-Hokkaido-Landscape-WUXGA_country_field_0149.jpg",
               @"http://d.hiphotos.baidu.com/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=487e85ccd158ccbf0fb1bd6878b1d75b/8ad4b31c8701a18b7c763e319e2f07082838fe2b.jpg",
@@ -62,7 +60,7 @@
 - (void)startDownload {
     for (int i = 0 ; i <[urlArr count]; i++) {
         LWRequest *request = [[LWRequest alloc] initWithTraget:[NSString stringWithFormat:@"%d",i] requestURL:[urlArr objectAtIndex:i] isPersistance:YES delegate:self];
-        [connetionManager addRequest:request];
+        [[LWConnectionManager sharedInstance] addRequest:request];
     }
 }
 

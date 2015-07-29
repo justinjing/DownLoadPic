@@ -19,10 +19,12 @@
     int i;
 }
 
-+ (LWConnectionManager *)defaultManager;
++ (LWConnectionManager *)sharedInstance;
 
 - (void)setMaxConcurrentOperationCount:(int)max;
 
 - (void)addRequest:(LWRequest *)reqeust;
+
 - (LWResponse *)addSynchronizedReqeust:(LWRequest *)request;
+
 @end
